@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block montitre %}
+debut de mes mots: beinvenue dans canvas ai
+{% endblock %}
+{% block content %}
+<h1># canvas-ai</h1>
+{% for x in users | reverse %}
+ <li>{{ x["first_name"]  }}</li>
+
+{% endfor %} 
+fin de mes mots : visiter une ville . tu remplis texte avec bordure ronde, contenu bonjour. bordure carré, comment vas tu ? et en une seule ligne bienvenue. ajoute des bouts de code ou une sortie pour une attraction touristique
+{% endblock %}
+{% block liens %}
+<a href="/">welcome</a>
+{% endblock %}
+<a href="/add_one_texte"> add one texte</a><a href="/add_one_programminglanguage"> add one programminglanguage</a><a href="/add_one_mycode"> add one mycode</a><a href="/add_one_user"> add one user</a><a href="/add_one_country"> add one country</a><a href="/add_one_city"> add one city</a><a href="/add_one_busstop"> add one busstop</a><a href="/add_one_popular_tourist_attraction"> add one popular_tourist_attraction</a>
